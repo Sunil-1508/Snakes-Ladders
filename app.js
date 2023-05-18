@@ -100,7 +100,6 @@ function rollDice2() {
             p1sum = snakeladder(p1sum, "red");
             document.getElementById(`g${p1sum}`).innerHTML = "<img src='images/red.png'>";
             if (p1sum == 100) {
-                showPopup("!!! PLAYER RED WON THE GAME !!!", "red");
                 document.getElementById("tog").innerHTML = "!!! PLAYER RED WON THE GAME !!!";
                 document.getElementById("tog").style.color = "red";
             }
@@ -115,7 +114,6 @@ function rollDice2() {
             document.getElementById(`g${p3sum}`).innerHTML = "<img src='images/blue.png'>";
         }
         if (p3sum == 100) {
-            showPopup("!!! PLAYER BLUE WON THE GAME !!!", "rgb(1, 191, 255)");
             document.getElementById("tog").innerHTML = "!!! PLAYER BLUE WON THE GAME !!!";
             document.getElementById("tog").style.color = "rgb(1, 191, 255)";
         }
