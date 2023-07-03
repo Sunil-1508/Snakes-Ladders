@@ -26,7 +26,7 @@ body {
 
 .snake {
 
-    position: static;
+    position: absolute;
     height: fit-content;
     width: 30%;
     top: 70%;
@@ -44,7 +44,7 @@ body {
 
 .ladder {
 
-    position: static;
+    position: absolute;
     height: 80%;
     width: 30%;
     translate: 205%;
