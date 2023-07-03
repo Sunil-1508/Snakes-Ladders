@@ -61,7 +61,7 @@ body {
 }
 
 .logo {
-    position: relative;
+    position: absolute;
     height: 70%;
     width: 30%;
     translate: 120%;
