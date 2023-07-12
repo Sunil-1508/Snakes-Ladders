@@ -255,15 +255,14 @@ body {
 
 
 .gridboard {
-    height: 700px;
-    width: 700px;
-    margin: 100px 100px 10px 10px ;
-
+    height: 650px;
+    width: 650px;
     display: grid;
     grid-template-columns: repeat(10, 1fr);
     grid-template-rows: repeat(10, 1fr);
     gap: 3px;
-    margin: 10px 10px 10px 20px;
+    margin-top:20px;
+    margin-left:20px;
     justify-content: center;
     text-align: center;
     align-items: center;
