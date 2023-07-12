@@ -1,39 +1,32 @@
 body {
     background-color: black;
+    overflow: hidden;
 }
 @media (max-width:457px) {
     .main {
         display: flex;
+        height: 100hv;
         flex-direction: column;
-        height: 100vh;
         justify-content:center;
         align-items: center;
         background-image: url("images/backpic.jpg");
         background-size: cover;
     
     }
-    .image{
-        height: 20%;
-    }
+
     .image img {
-        height: 100%;
-        width :100%;
+        height:200px;
     
     }
-    .logo {
-        height: 40%;
-    }
     .logo img {
-        top:20px;
-        height: 100%;
-        width: 300px;
+        height: 200px;
     }
     
     .text {
-        height: 20%;
-        width: 70%;
+        height: 444px;
+        width: 400px;
         display: grid;
-        align-items: center;
+        align-items:baseline;
         justify-items: center;
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 2fr;
@@ -45,9 +38,9 @@ body {
         background-color:#ffff00;
         border-radius: 10px;
         color: rgb(0, 0, 0);
-        font-size:medium;
+        font-size:x-large;
         font-weight: bold;
-        padding: 1px 1px;
+        padding: 10px 10px;
         cursor: none;
         text-shadow: 2px 1px 3px rgba(0, 0, 0, 0.61);
         box-shadow: 2px 3px 3px rgba(0, 0, 0, 0.61);
@@ -63,9 +56,6 @@ body {
     }
     .button {
         cursor: pointer;
-        height: 30px;
-        width: 40px;
-        font-size: 100%;
         background-color: #00981c;
         border-radius: 10px;
         border-color: black;
@@ -73,7 +63,7 @@ body {
         border-left: #ffffff;
         color: wheat;
         font-weight: bold;
-        padding: 1px 10px;
+        padding: 10px 20px;
         text-shadow: 2px 1px 3px rgba(0, 0, 0, 0.61);
         box-shadow: 2px 3px 3px rgba(0, 0, 0, 0.61);
         font-size: larger;
@@ -265,15 +255,15 @@ body {
 
 
 .gridboard {
-    height: 723px;
-    width: 723px;
+    height: 700px;
+    width: 700px;
     margin: 100px 100px 10px 10px ;
 
     display: grid;
     grid-template-columns: repeat(10, 1fr);
     grid-template-rows: repeat(10, 1fr);
     gap: 3px;
-    margin: 50px 10px 50px 50px;
+    margin: 10px 10px 10px 20px;
     justify-content: center;
     text-align: center;
     align-items: center;
@@ -285,7 +275,6 @@ body {
 
 .grid img {
     height: 80%;
-    width: 80%;
 
 }
 
@@ -357,13 +346,11 @@ body {
 }
 .dice {
     
-    display: block;
-    width: 100px;
-    height: 100px;
-   
-    line-height: 100px;
-    margin: 20px auto;
-
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:30px;
 }
 
 .dice img {
@@ -384,8 +371,6 @@ body {
     color: #f5ffcf;
     border: black;
     font-size: 18px;
-    top: 140%;
-    translate: 5%;
     font-family: Cambria;
     font-weight: bold;
     border-radius: 5px;
