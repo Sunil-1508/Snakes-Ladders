@@ -70,6 +70,7 @@ function snakeladder(sum, c) {
 /*----------------------------------------------------------------------------------------------------------------------------*/
 function rollDice2() {
     //rollingSound.play()
+    if(p1sum>=100 || p3sum>=100){  return; }
     var result = Math.floor(Math.random() * 6) + 1;
     var image = document.getElementById("dice-image");
     image.src = "images/d" + result + ".png";
@@ -114,14 +115,11 @@ function rollDice2() {
             document.getElementById(`g${p3sum}`).innerHTML = "<img src='images/blue.png'>";
         }
         if (p3sum == 100) {
+            
             document.getElementById("tog").innerHTML = "!!! PLAYER BLUE WON THE GAME !!!";
             document.getElementById("tog").style.color = "rgb(1, 191, 255)";
         }
     }
-
-
-
-
 
 }
 
@@ -130,6 +128,8 @@ function rollDice2() {
 
 function rollDice3() {
     //rollingSound.play()
+
+    if(p1sum>=100 || p2sum>=100 || p3sum>=100){ return; }
     var result = Math.floor(Math.random() * 6) + 1;
     var image = document.getElementById("dice-image");
     image.src = "images/d" + result + ".png";
@@ -157,7 +157,7 @@ function rollDice3() {
     }
 
     tog = tog + 1
-
+  
 
     if (tog % 3 == 1) {
         if (p1sum + result <= 100) {
@@ -210,6 +210,7 @@ function rollDice3() {
 
 function rollDice4() {
     //rollingSound.play()
+    if(p1sum>=100 || p2sum>=100 || p3sum>=100 || p4sum>=100){ return; }
     var result = Math.floor(Math.random() * 6) + 1;
     var image = document.getElementById("dice-image");
     image.src = "images/d" + result + ".png";
@@ -310,6 +311,7 @@ function rollDice4() {
 
 function rollDice5() {
     //rollingSound.play()
+    if(p1sum>=100 || p2sum>=100 || p3sum>=100 || p4sum>=100 || p5sum>=100){ return; }
     var result = Math.floor(Math.random() * 6) + 1;
     var image = document.getElementById("dice-image");
     image.src = "images/d" + result + ".png";

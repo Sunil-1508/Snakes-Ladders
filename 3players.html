@@ -11,7 +11,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
-<body background="images/backpic.jpg">
+
+<body>
     <div class="mainplayer">
         <div class="gridboard">
             <div class="grid" id="g100"></div>
@@ -115,23 +116,27 @@
             <div class="grid" id="g9"></div>
             <div class="grid" id="g10"></div>
         </div>
-        <div class="msg">
-            <h1 id="msg"></h1>
+            <div class="flex-side"><div class="ingamelogo"> <img src="images/logo.png"></div>
+            <div class="msg">
+                <h1 id="msg"></h1>
+            </div>
+            <div class="tog">
+                <h2 id="tog"> Now it's <span id="col" style="color:red;"> Red's </span> Turn</h2>
+            </div>
+            <div class="flex-bottom">
+                <div class="dice">
+                <img id="dice-image" src="images/d1.png" alt="dice image">
+                <button id="dice" onclick="rollDice3()"><i class="fa-solid fa-dice"></i> Roll</button>
+                </div>
+                <div class="icon">
+                    <div class="icon1"><button onclick="home()"><i class="fa-solid fa-house-chimney-window"></i> HOME</button></div>
+                    <div class="icon2"><button onclick="restart()"><i class="fa-sharp fa-solid fa-rotate-right"></i></i> RESTART</button></div>
+                </div>
+            </div>
         </div>
-        <div class="tog">
-            <h2 id="tog"> Now it's <span id="col" style="color:red;"> Red's </span> Turn</h2>
-        </div>
-        <div class="ingamelogo"> <img src="images/logo.png"></div>
-        <div class="ladder"> <img src="images/ladder.png"> </div>
-        <div class="snake"> <img src="images/snake1.png"> </div>
-        <div class="icon1"><button onclick="home()"><i class="fa-solid fa-house-chimney-window"></i> HOME</button></div>
-        <div class="icon2"><button onclick="restart()"><i class="fa-sharp fa-solid fa-rotate-right"></i></i> RESTART</button></div>
-        <div class="dice">
-            <img id="dice-image" src="images/d1.png" alt="dice image">
-            <button onclick="rollDice3()"><i class="fa-solid fa-dice"> </i> Roll</button>
-        </div>
-
+        
     </div>
+    
 </body>
 
 </html>
