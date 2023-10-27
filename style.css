@@ -10,9 +10,6 @@
     max-width: 60% !important;
 }
 
-body{
-    background-size:cover;
-}
 
 .row{
     justify-content: center; 
@@ -151,8 +148,7 @@ p{
 
 
 .logoingame{
-    min-width: 22rem !important;
-    max-width: 60% !important;
+    width: 80% !important;
 }
 
 .gridboard {
