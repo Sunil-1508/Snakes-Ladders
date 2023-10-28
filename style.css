@@ -5,6 +5,10 @@
     width: 17rem;
 } 
 
+body{
+    background-size: cover;
+}
+
 .logo{
     min-width: 20rem !important;
     max-width: 60% !important;
@@ -36,6 +40,7 @@
     .image{
         padding-bottom: 5rem !important;
     }
+   
 }
 @media  (min-width:575px) and (max-width:1023px){
       .t2{
@@ -72,7 +77,7 @@
     .home, .mainplayer{
         padding-top: 3vh !important;
     }
-          
+       
 }
 .t1{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
