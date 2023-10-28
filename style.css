@@ -117,7 +117,9 @@ body{
 }
 
 /* ======================= IN GAME STYLES =====================================================*/
-
+.mainplayer{
+    height: 100vh;
+}
 @media (max-width : 880px){
 
     .mainplayer {
