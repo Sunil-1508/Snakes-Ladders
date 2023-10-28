@@ -6,7 +6,7 @@
 } 
 
 .logo{
-    min-width: 23rem !important;
+    min-width: 20rem !important;
     max-width: 60% !important;
 }
 
@@ -23,6 +23,19 @@
     .t1{
       font-size: 1.5rem !important;
     }
+    .buttons{
+        max-width: 70% !important;
+        gap: 10px;
+    }
+    .home{
+        padding-top: 20vh !important;
+    }
+    .mainplayer{
+        padding-top: 10vh !important;
+    }
+    .image{
+        padding-bottom: 5rem !important;
+    }
 }
 @media  (min-width:575px) and (max-width:1023px){
       .t2{
@@ -31,6 +44,19 @@
       .t1{
           font-size: 2rem !important;
       }
+      .buttons{
+        max-width: 40% !important;
+        gap: 10px;
+    }
+    .home{
+        padding-top: 25vh !important;
+    }
+    .mainplayer{
+        padding-top: 1vh !important;
+    }
+    .image{
+        width: 30rem;
+    } 
 }
 @media  (min-width:1024px){
       .t2{
@@ -39,10 +65,18 @@
       .t1{
           font-size: 2.5rem !important;
       }
+      .buttons{
+        max-width: 30% !important;
+        gap: 10px;
+    }
+    .home, .mainplayer{
+        padding-top: 10vh !important;
+    }
           
 }
 .t1{
-    color: rgb(238, 255, 0);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(229, 240, 16);
     text-shadow: 3px 3px 6px black;
 }
 
@@ -62,8 +96,19 @@
     --bs-btn-disabled-color: #000000 !important;
 }
 
-.buttons{
-    max-width: 60% !important;
+
+
+.icon0{
+    border: none;
+    font-size: medium;
+    height: 35px;
+    color: white;
+    cursor: pointer;
+    text-shadow: 1px 1px 5px black;
+    border-radius: 5px;
+    background-color: rgb(255, 68, 0);
+    padding: 5px 6px;
+    box-shadow: 0px 0px 15px 5px rgb(0, 0, 0);
 }
 
 /* ======================= IN GAME STYLES =====================================================*/
@@ -247,15 +292,6 @@ button:hover {
     color: black;
 }
 
-
-.icon1,.icon2{
-   
-    text-align: center;
-    box-shadow: 0px 0px 15px 5px rgb(0, 0, 0);
-    border-radius: 5px;
-
-}
-
 .icon1 button ,.icon2 button{
     font: size 1px;
     border: none;
@@ -266,4 +302,5 @@ button:hover {
     border-radius: 5px;
     background-color: rgb(255, 68, 0);
     padding: 5px 6px;
+    box-shadow: 0px 0px 15px 5px rgb(0, 0, 0);
 }
